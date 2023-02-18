@@ -36,7 +36,7 @@ const Main = () => {
             <article>
                 <form onSubmit={handleSubmit}>
                     <label>Enter city name:</label>
-                    <input type="text" placeholder='Search city..' onChange={e => { setCity(e.target.value) }}></input>
+                    <input type="text" placeholder='enter city name' onChange={e => { setCity(e.target.value) }}></input>
                     <br></br>
                     <button>Search</button>
                 </form>
@@ -51,11 +51,11 @@ const Main = () => {
                                     <br></br>
                                     <p><span>{value.weather[0].description}</span></p>
                                     <br></br>
-                                    <p><span>Temp:</span> {value.main.temp} <sup>o</sup>C</p>
+                                    <p><span>Temp:</span> {value.main.temp}<sup>o</sup> C</p>
                                     <br></br>
-                                    <p><span>min_temp:</span> {value.main.temp_min} <sup>o</sup>C | <span>max_temp:</span> {value.main.temp_max} <sup>o</sup>C</p>
+                                    <p><span>min_temp:</span> {value.main.temp_min}<sup>o</sup> C | <span>max_temp:</span> {value.main.temp_max}<sup>o</sup> C</p>
                                     <br></br>
-                                    <p><span>Longitude:</span> {value.coord.lon} <sup>o</sup>N | <span>Latitude:</span> {value.coord.lat} <sup>o</sup>N</p>
+                                    <p><span>Longitude:</span> {value.coord.lon}<sup>o</sup> E | <span>Latitude:</span> {value.coord.lat}<sup>o</sup> N</p>
                                     <br></br>
                                     <p><span>Humidity:</span> {value.main.humidity}%</p>
                                     <br></br>
