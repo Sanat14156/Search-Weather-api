@@ -10,7 +10,7 @@ const Main = () => {
     useEffect(() => {
         
         let weatherData = async () => {
-            let res = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=0cfc67891ebff2f44a1d5687b0700c0a&units=metric`);
+            let res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=0cfc67891ebff2f44a1d5687b0700c0a&units=metric`);
             let j_data = await res.json();
             setData([j_data]);
         };
@@ -47,7 +47,7 @@ const Main = () => {
                             return (
                                 <div key={Math.random()}>
                                     <h1>{value.name}</h1>
-                                    <img src={`http://openweathermap.org/img/wn/${value.weather[0].icon}@2x.png`} alt={value.name} width={150}></img>
+                                    <img src={`https://openweathermap.org/img/wn/${value.weather[0].icon}@2x.png`} alt={value.name} width={150}></img>
                                     <br></br>
                                     <p><span>{value.weather[0].description}</span></p>
                                     <br></br>
