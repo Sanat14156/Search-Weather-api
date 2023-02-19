@@ -68,7 +68,7 @@ section>article>article p:nth-of-type(1){
 
 @media screen and (max-width:420px){
     section>article>article p{
-        font-size: 17px;
+        font-size: 18px;
     }
 }
 
