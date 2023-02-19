@@ -66,3 +66,10 @@ section>article>article p:nth-of-type(1){
     color: red;
 }
 
+@media screen and (max-width:420px){
+    section>article>article p{
+        font-size: 17px;
+    }
+}
+
+
